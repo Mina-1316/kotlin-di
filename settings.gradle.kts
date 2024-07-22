@@ -3,3 +3,13 @@ plugins {
 }
 rootProject.name = "kotlin-di"
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+include(":api")
+include(":processor")
